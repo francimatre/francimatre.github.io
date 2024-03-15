@@ -8,8 +8,14 @@
     </head>
     <body>
         <a-scene>
+            <a-entity animation="property: position; to: 0 0 10; loop: true; dur:30000">
+                <a-entity position="0 1.6 3" camera></entity>
+        </a-entity>
+            <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur:2000">
+                <a-entity camera position="0 1.6 3"></entity>
+        </a-entity>
             <a-sphere radius="1" position="0 1.6 -3"></a-sphere>
-
+            <a-sphere radius="1" position="3 5 -3" material="" geometry="primitive: icosahedron"></a-sphere>
             <a-sky color="#ECECEC"></a-sky>
         </a-scene>
     </body>
