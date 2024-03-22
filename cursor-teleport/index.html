@@ -11,17 +11,21 @@
     <!-- camera rig -->
     <a-entity id="cameraRig" cursor-teleport="cameraRig: #cameraRig; cameraHead: #head; collisionEntities: .collision">
         <a-entity id="head" position="0 0.3 0" camera look-controls="reverseMouseDrag: true"></a-entity>
+  
+        <light type="spot" colour="yellow" intensity="0.5" ></light>
+  
     </a-entity>
 
     <!-- collidable entity -->
    
     <a-entity class="collision" position="0 -.05 0" geometry="primitive: box; width: 8; height: .1; depth: 8"></a-entity>
-
+    <a-entity light="color: #ffa57d; intensity: 0.6; castShadow: true" position="-0.03142 0.09813 -0.58726" data-aframe-default-light="" aframe-injected=""></a-entity>
+  
     <!-- collidable entity -->
 
     <a-entity class="collision" position="0 -.10 0" geometry="primitive: circle; width: 7; height: .5; depth: 8"></a-entity>
 
-
+    <a-entity light="color: #ff8647; groundColor: #002e7a; decay: 1.12; distance: 1.66" data-aframe-default-light="" aframe-injected="" position="-2.28402 -10.26658 -62.89602"></a-entity>
 
 
 
